@@ -1,0 +1,31 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.10)
+    connection_pool (2.3.0)
+    rack (3.0.3)
+    rack-session (0.3.0)
+      rack (>= 3.0.0.beta1)
+    rackup (0.2.3)
+      rack (>= 3.0.0.beta1)
+      webrick
+    redis-client (0.12.0)
+      connection_pool
+    sidekiq (7.0.3)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.11.0)
+    webrick (1.7.0)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  rack
+  rack-session
+  rackup
+  sidekiq (~> 7)
+
+BUNDLED WITH
+   2.3.15
