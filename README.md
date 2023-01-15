@@ -17,13 +17,13 @@ $ docker compose up
 ### 3. Sidekiqサーバを建てる
 
 ```
-$ bundle exec sidekiq -r ./main.rb
+$ bundle exec sidekiq -r ./application.rb
 ```
 
 ### 4. ジョブを実行する
 
 ```
-$ bundle exec irb -r ./main.rb
+$ bundle exec irb -r ./application.rb
 
 irb(main)> SampleJob.perform_async({ 'name' => 'hoge'})
 
