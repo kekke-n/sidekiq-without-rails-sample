@@ -19,3 +19,11 @@ class SampleJob
     puts "params: #{params}"
   end
 end
+
+class SleepJob
+  include Sidekiq::Job
+
+  def perform
+    sleep 300
+  end
+end
